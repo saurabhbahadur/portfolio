@@ -5,7 +5,7 @@ import { Typewriter } from "react-simple-typewriter";
 const Home = () => {
   return (
     <div
-      className="bg-primary_bg text-primary_text text-center py-16 h-screen"
+      className="bg-primary_bg text-primary_text text-center py-16 h-screen flex flex-col items-center justify-center"
       id="home"
     >
       <img
@@ -13,14 +13,16 @@ const Home = () => {
         alt="Profile"
         className="mx-auto mb-8 w-48 h-48 rounded-full object-cover transform transition-transform duration-300 hover:scale-105"
       />
-      <h1 className="text-4xl font-bold mb-8">
+
+      <h1 className="text-4xl font-bold">
         I'm{" "}
-        <span className="text-transparent  bg-clip-text bg-secondary_button_grad">
+        <span className="text-transparent bg-clip-text bg-secondary_button_grad">
           Saurabh Bahadur,
         </span>
       </h1>
 
-      <h1 className="text-4xl font-bold mb-8">
+      {/* Wrapping Typewriter in a div with min-height */}
+      <div className="text-4xl font-bold h-[50px] md:h-[60px]">
         <span className="text-secondary_text">
           <Typewriter
             words={[
@@ -30,12 +32,10 @@ const Home = () => {
               "Java Developer",
               "Spring Boot Developer",
               "SEO Specialist",
-              "Digital Marketer",
               "Tech Enthusiast",
               "Gamer & Content Creator",
-              "Vlogger"
+              "Vlogger",
             ]}
-            
             loop={true}
             cursor
             cursorStyle="|"
@@ -44,16 +44,18 @@ const Home = () => {
             delaySpeed={1000}
           />
         </span>
-      </h1>
-      <p className="mt-4 p-4 text-lg text-secondary_text">
+      </div>
+
+      <p className="mt-4 p-4 text-lg text-secondary_text max-w-2xl">
         I am a passionate Full Stack Developer with expertise in both Java
-        Spring Boot and MERN stack technologies
+        Spring Boot and MERN stack technologies.
       </p>
+
       <div className="mt-4 space-x-4">
-        <button className="bg-primary_button_grad text-primary_text  md:inline transition-transform duration-300 hover:scale-105 px-4 py-2 rounded-full">
+        <button className="bg-primary_button_grad text-primary_text px-4 py-2 rounded-full transition-transform duration-300 hover:scale-105">
           Contact Me
         </button>
-        <button className="bg-secondary_button_grad text-primary_text  md:inline transition-transform duration-300 hover:scale-105 px-4 py-2 rounded-full">
+        <button className="bg-secondary_button_grad text-primary_text px-4 py-2 rounded-full transition-transform duration-300 hover:scale-105">
           Resume
         </button>
       </div>
