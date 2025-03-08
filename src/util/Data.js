@@ -7,7 +7,7 @@ export const my_urls = [
     github_id: "https://github.com/saurabhbahadur",
     discord_id: "https://discord.gg/aQR27Bg7de",
     insta_id: "https://www.instagram.com/saurabhbahadur_/",
-    resume_url : "https://drive.google.com/file/d/1NHRCBnaZecxvMr2ZR1sb61OSJzgWcKRl/view?usp=sharing",
+    resume_url: "https://drive.google.com/file/d/1NHRCBnaZecxvMr2ZR1sb61OSJzgWcKRl/view?usp=sharing",
 
   },
 ];
@@ -255,3 +255,21 @@ export const educations = [
     year: 2015,
   },
 ]
+
+export const handleDownloadResume = () => {
+  const resumePath = "/portfolio/Saurabh_Bahadur_resume.pdf"; // Adjust the path if needed
+  const link = document.createElement("a");
+  link.href = resumePath;
+  link.setAttribute("download", "Saurabh_Bahadur_resume.pdf");
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+};
+
+export const handleContactByMail = () => {
+  const email = "singhsaurabhbahadur@gmail.com"; // Replace with your email
+  const subject = encodeURIComponent("Inquiry");
+  const body = encodeURIComponent("Hello, I would like to connect with you.");
+
+  window.location.href = `mailto:${email}?subject=${subject}&body=${body}`;
+};

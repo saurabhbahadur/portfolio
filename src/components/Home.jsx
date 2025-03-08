@@ -1,5 +1,9 @@
 import React from "react";
-import { my_urls } from "../util/Data";
+import {
+  handleContactByMail,
+  handleDownloadResume,
+  my_urls,
+} from "../util/Data";
 import { Typewriter } from "react-simple-typewriter";
 
 const Home = () => {
@@ -52,10 +56,16 @@ const Home = () => {
       </p>
 
       <div className="mt-4 space-x-4">
-        <button className="bg-primary_button_grad text-primary_text px-4 py-2 rounded-full transition-transform duration-300 hover:scale-105">
+        <button
+          onClick={handleContactByMail}
+          className="bg-primary_button_grad text-primary_text px-4 py-2 rounded-full transition-transform duration-300 hover:scale-105"
+        >
           Contact Me
         </button>
-        <button className="bg-secondary_button_grad text-primary_text px-4 py-2 rounded-full transition-transform duration-300 hover:scale-105">
+        <button
+          onClick={handleDownloadResume}
+          className="bg-secondary_button_grad text-primary_text px-4 py-2 rounded-full transition-transform duration-300 hover:scale-105"
+        >
           Resume
         </button>
       </div>
