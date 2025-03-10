@@ -1,9 +1,5 @@
 import React from "react";
-import {
-  handleContactByMail,
-  handleDownloadResume,
-  my_urls,
-} from "../util/Data";
+import { handleContactByMail, handleDownloadResume } from "../util/Data";
 import { Typewriter } from "react-simple-typewriter";
 
 const Home = () => {
@@ -13,7 +9,7 @@ const Home = () => {
       id="home"
     >
       <img
-        src={my_urls[0].home_page_profile_img}
+        src="./home_profile.jpg"
         alt="Profile"
         className="mx-auto mb-8 w-48 h-48 rounded-full object-cover transform transition-transform duration-300 hover:scale-105"
       />

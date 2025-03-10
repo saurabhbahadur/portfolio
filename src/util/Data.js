@@ -1,14 +1,12 @@
 export const my_urls = [
   {
-    home_page_profile_img: "https://scontent.flko9-1.fna.fbcdn.net/v/t39.30808-6/482008901_2668632820192618_1437668639168784334_n.jpg?stp=dst-jpg_s640x640_tt6&_nc_cat=100&ccb=1-7&_nc_sid=127cfc&_nc_ohc=el3nGtctVFMQ7kNvgHxR0nE&_nc_oc=AdhV8UcRV2ivCxKfucZjeAdsD626RtkBM38Bht0Or19Eh9wSZmReeppmEEQLTGU_T1RznYUzgYpLdxv3_63O-U-d&_nc_zt=23&_nc_ht=scontent.flko9-1.fna&_nc_gid=AZS0lQyZY7nCzHUNcg1oAgr&oh=00_AYCjRKNIX0r3y7GUY2jNrZoClmrEeGWcRPcYeUuKBnXTrw&oe=67CE3C3A",
-    about_page_img: "https://scontent.flko9-2.fna.fbcdn.net/v/t1.6435-9/56236205_992834091105841_7890121966638596096_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=a5f93a&_nc_ohc=RK1rFnDBQrAQ7kNvgE6x_1J&_nc_oc=Adjg4bwdDbxAp1ReRcHhMtfNhtghMvaS2yRSPOYtXeP_8N-9h5UZR8QRJU5nVZct7chzNlOI5gXAhespAAbiBHoh&_nc_zt=23&_nc_ht=scontent.flko9-2.fna&_nc_gid=AmyV9Zs_A9Ls_3xJ9FgtXkP&oh=00_AYCMVLJxkCiFH2Z_6H47IfS4xT9rgYz4_7pU2zaLlydZ6w&oe=67EFD1CC",
     mail_id: "mailto:singhsaurabhbahadur@gmail.com",
     linked_id: "https://www.linkedin.com/in/saurabhbahadur/",
     github_id: "https://github.com/saurabhbahadur",
     discord_id: "https://discord.gg/aQR27Bg7de",
     insta_id: "https://www.instagram.com/saurabhbahadur_/",
     resume_url: "https://drive.google.com/file/d/1NHRCBnaZecxvMr2ZR1sb61OSJzgWcKRl/view?usp=sharing",
-
+    
   },
 ];
 
