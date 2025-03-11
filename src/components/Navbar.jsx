@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { FaTimes } from "react-icons/fa";
 import { FaBars } from "react-icons/fa6";
+import { Link } from "react-router-dom";
+
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,21 +15,21 @@ const Navbar = () => {
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex space-x-6">
-          <a href="#home" className="hover:text-hover_color">
+          <Link to="/" className="hover:text-hover_color">
             Home
-          </a>
-          <a href="#services" className="hover:text-hover_color">
+          </Link>
+          <Link to="/services" className="hover:text-hover_color">
             Services
-          </a>
-          <a href="#projects" className="hover:text-hover_color">
+          </Link>
+          <Link to="/projects" className="hover:text-hover_color">
             Projects
-          </a>
-          <a href="#aboutme" className="hover:text-hover_color">
+          </Link>
+          <Link to="/about-me" className="hover:text-hover_color">
             About
-          </a>
-          <a href="#contact" className="hover:text-hover_color">
+          </Link>
+          <Link to="/contact" className="hover:text-hover_color">
             Contact
-          </a>
+          </Link>
         </div>
 
         {/* Mobile Menu Button */}
@@ -39,41 +41,41 @@ const Navbar = () => {
       {/* Mobile Menu */}
       {isOpen && (
         <div className="md:hidden bg-primary_bg py-4 absolute top-full text-center left-0 w-full shadow-lg">
-          <a
-            href="#home"
+          <Link
+            to="/"
             className="block py-2 px-6 hover:text-hover_color"
             onClick={() => setIsOpen(false)}
           >
             Home
-          </a>
-          <a
-            href="#services"
+          </Link>
+          <Link
+            to="/services"
             className="block py-2 px-6 hover:text-hover_color"
             onClick={() => setIsOpen(false)}
           >
             Services
-          </a>
-          <a
-            href="#projects"
+          </Link>
+          <Link
+            to="/projects"
             className="block py-2 px-6 hover:text-hover_color"
             onClick={() => setIsOpen(false)}
           >
             Projects
-          </a>
-          <a
-            href="#aboutme"
+          </Link>
+          <Link
+            to="/about-me"
             className="block py-2 px-6 hover:text-hover_color"
             onClick={() => setIsOpen(false)}
           >
             About
-          </a>
-          <a
-            href="#contact"
+          </Link>
+          <Link
+            to="/contact"
             className="block py-2 px-6 hover:text-hover_color"
             onClick={() => setIsOpen(false)}
           >
             Contact
-          </a>
+          </Link>
         </div>
       )}
     </nav>
