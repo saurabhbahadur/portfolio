@@ -1,6 +1,7 @@
 import React from "react";
 import { FaEnvelope, FaLocationPin, FaPhone } from "react-icons/fa6";
 import { my_urls } from "../util/Data";
+import ContactForm from "../components/ContactForm";
 
 const Contact = () => {
   return (
@@ -36,48 +37,7 @@ const Contact = () => {
             </div>
           </div>
           <div className="flex-1 w-full">
-            <form action="" className="space-y-4  ">
-              <div>
-                <label htmlFor="name" className="block mb-2 ">
-                  Your Name{" "}
-                </label>
-                <input
-                  type="text"
-                  placeholder="Enter Your Name"
-                  name=""
-                  id=""
-                  className="w-full p-2 rounded bg-gray-800 border border-gray-600 focus:outline-none focus:border-icon "
-                />
-              </div>
-              <div>
-                <label htmlFor="email" className="block mb-2 ">
-                  Email
-                </label>
-                <input
-                  type="text"
-                  placeholder="Enter Your Email"
-                  name=""
-                  id=""
-                  className="w-full p-2 rounded bg-gray-800 border border-gray-600 focus:outline-none focus:border-icon "
-                />
-              </div>
-              <div>
-                <label htmlFor="message" className="block mb-2 ">
-                  Message
-                </label>
-                <textarea
-                  type="text"
-                  placeholder="Enter Your Message"
-                  name=""
-                  id=""
-                  rows="5"
-                  className="w-full p-2 rounded bg-gray-800 border border-gray-600 focus:outline-none focus:border-icon "
-                />
-              </div>
-              <button className="bg-secondary_button_grad text-primary_text hidden md:inline transform transition-transform duration-300 hover:scale-105 px-8 py-2 rounded-full ">
-                Send
-              </button>
-            </form>
+            <ContactForm/>
           </div>
         </div>
       </div>
