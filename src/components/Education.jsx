@@ -18,7 +18,7 @@ const Education = () => {
                 <h1 className="text-transparent text-2xl font-bold bg-clip-text bg-secondary_button_grad">
                   {education.edu_name}
                 </h1>
-                <p className="text-secondary_text text-lg">{education.edu_org}</p>
+                <p className="text-secondary_text text-lg space-x-4">{education.edu_org}</p>
               </div>
 
               {/* Right Side (Year) */}

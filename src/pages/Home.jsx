@@ -1,11 +1,13 @@
 import React from "react";
 import { handleContactByMail, handleDownloadResume } from "../util/Data";
 import { Typewriter } from "react-simple-typewriter";
+import Contact from './Contact'
+
 
 const Home = () => {
   return (
     <div
-      className="bg-primary_bg text-primary_text text-center py-16 h-screen flex flex-col items-center justify-center"
+      className="bg-primary_bg text-primary_text text-center mt-4 py-16 h-auto flex flex-col items-center justify-center"
       id="home"
     >
       <img

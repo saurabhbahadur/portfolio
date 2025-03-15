@@ -1,8 +1,8 @@
 import React from "react";
 import About from "../pages/About";
-import Skills from "../pages/Skills";
-import Certificates from "../pages/Certificates";
-import Education from "../pages/Education";
+import Skills from "./Skills";
+import Certificates from "./Certificates";
+import Education from "./Education";
 
 const AboutMe = () => {
   return (

@@ -78,6 +78,7 @@ const Navbar = () => {
           </Link>
         </div>
       )}
+      <hr />
     </nav>
   );
 };

@@ -42,34 +42,34 @@ const Footer = () => {
               className="text-secondary_text hover:text-primary_text"
             >
               {" "}
-              <FaLinkedinIn />{" "}
+              <FaLinkedinIn className="text-2xl" />{" "}
             </a>
             <a
               href={my_urls[0].discord_id}
               className="text-secondary_text hover:text-primary_text"
             >
               {" "}
-              <FaDiscord />{" "}
+              <FaDiscord className="text-2xl" />{" "}
             </a>
             <a
               href={my_urls[0].mail_id}
               className="text-secondary_text hover:text-primary_text"
             >
               {" "}
-              <FaEnvelope />{" "}
+              <FaEnvelope className="text-2xl" />{" "}
             </a>
             <a
               href={my_urls[0].github_id}
               className="text-secondary_text hover:text-primary_text"
             >
               {" "}
-              <FaGithub />{" "}
+              <FaGithub className="text-2xl" />{" "}
             </a>
             <a
               href={my_urls[0].insta_id}
               className="text-secondary_text hover:text-primary_text"
             >
-              <FaInstagram />
+              <FaInstagram className="text-2xl" />
             </a>
           </div>
           <div className="flex space-x-4 ">
