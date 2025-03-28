@@ -1,8 +1,8 @@
 import React from "react";
 import { handleContactByMail, handleDownloadResume } from "../util/Data";
 import { Typewriter } from "react-simple-typewriter";
-import Contact from './Contact'
 
+const home_profile_img = "https://res.cloudinary.com/dxaf36ydh/image/upload/f_auto,q_auto/v1/Portfolio/home_profile_afeao8";
 
 const Home = () => {
   return (
@@ -11,7 +11,7 @@ const Home = () => {
       id="home"
     >
       <img
-        src="./home_profile.jpg"
+        src={home_profile_img}
         alt="Profile"
         className="mx-auto mb-8 w-48 h-48 rounded-full object-cover transform transition-transform duration-300 hover:scale-105"
       />

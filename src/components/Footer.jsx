@@ -1,5 +1,4 @@
 import React from "react";
-
 import {
   FaDiscord,
   FaEnvelope,
@@ -21,18 +20,6 @@ const Footer = () => {
               and create something amazing together!
             </p>
           </div>
-          <div className="flex-1 w-full">
-            <form action="" className="flex items-center justify-center">
-              <input
-                type="email"
-                placeholder="Enter Your email"
-                className="w-full p-2 rounded-l-lg bg-gray-800 border border-gray-600 focus:outline-none focus:border-green-400"
-              />
-              <button className="bg-secondary_button_grad text-primary_text px-4 py-2.5 rounded-r-lg">
-                Subscribe
-              </button>
-            </form>
-          </div>
         </div>
         <div className="border-t border-gray-600 pt-4 flex flex-col md:flex-row justify-between items-center">
           <p className="text-gray-400"> &copy; {new Date().getFullYear()}</p>
@@ -41,29 +28,25 @@ const Footer = () => {
               href={my_urls[0].linked_id}
               className="text-secondary_text hover:text-primary_text"
             >
-              {" "}
-              <FaLinkedinIn className="text-2xl" />{" "}
+              <FaLinkedinIn className="text-2xl" />
             </a>
             <a
               href={my_urls[0].discord_id}
               className="text-secondary_text hover:text-primary_text"
             >
-              {" "}
-              <FaDiscord className="text-2xl" />{" "}
+              <FaDiscord className="text-2xl" />
             </a>
             <a
               href={my_urls[0].mail_id}
               className="text-secondary_text hover:text-primary_text"
             >
-              {" "}
-              <FaEnvelope className="text-2xl" />{" "}
+              <FaEnvelope className="text-2xl" />
             </a>
             <a
               href={my_urls[0].github_id}
               className="text-secondary_text hover:text-primary_text"
             >
-              {" "}
-              <FaGithub className="text-2xl" />{" "}
+              <FaGithub className="text-2xl" />
             </a>
             <a
               href={my_urls[0].insta_id}
@@ -72,12 +55,12 @@ const Footer = () => {
               <FaInstagram className="text-2xl" />
             </a>
           </div>
-          <div className="flex space-x-4 ">
+          <div className="flex space-x-4">
             <a href="" className="text-secondary_text hover:text-primary_text">
               Privacy
             </a>
             <a href="" className="text-secondary_text hover:text-primary_text">
-              Term & Condition
+              Terms & Conditions
             </a>
           </div>
         </div>

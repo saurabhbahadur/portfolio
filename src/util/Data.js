@@ -5,8 +5,6 @@ export const my_urls = [
     github_id: "https://github.com/saurabhbahadur",
     discord_id: "https://discord.gg/aQR27Bg7de",
     insta_id: "https://www.instagram.com/saurabhbahadur_/",
-    resume_url: "https://drive.google.com/file/d/1NHRCBnaZecxvMr2ZR1sb61OSJzgWcKRl/view?usp=sharing",
-    
   },
 ];
 
@@ -63,17 +61,38 @@ export const services = [
 export const projects = [
   {
     id: 1,
-    name: "Atithi Devo Bhava",
-    tech: "ExpressJS NodeJS MongoDB Cloudinary Mapbox HTML Css Bootstrap 5 EJS",
-    image: "https://media.licdn.com/dms/image/v2/D562DAQEvBqsNKllbnw/profile-treasury-image-shrink_800_800/profile-treasury-image-shrink_800_800/0/1708427646703?e=1741939200&v=beta&t=mwva-qJY0R34MVviDKAZ0ymj49xne3Tc9svXV4f_uq8",
-    github: "https://github.com/saurabhbahadur/Atithi-Devo-Bhava",
+    name: "YouTube",
+    tech: "Java Spring Boot Microservices Architecture Postgres Rabbit MQ Docker React JS Tailwind CSS Vite",
+    image: "",
+    github: "https://github.com/saurabhbahadur/Youtube",
   },
   {
     id: 2,
+    name: "Atithi Devo Bhava",
+    tech: "ExpressJS NodeJS MongoDB Cloudinary Mapbox HTML Css Bootstrap 5 EJS",
+    image: "https://res.cloudinary.com/dxaf36ydh/image/upload/f_auto,q_auto/v1/Portfolio/Atithi_Devo_Bhava_-_Personal_-_Microsoft_Edge_09-02-2024_09_00_28_bphpuy",
+    github: "https://github.com/saurabhbahadur/Atithi-Devo-Bhava",
+  },
+  {
+    id: 3,
     name: "Weather App",
     tech: "ReactJS MaterialUI",
-    image: "https://media.licdn.com/dms/image/v2/D562DAQEBd_mn5YzLlg/profile-treasury-image-shrink_800_800/B56ZVyEaeOGsAc-/0/1741375516814?e=1741982400&v=beta&t=bq5MjjmZEJ9PYtnT5J7Na7pG0c4rscGW4q6ukQA6pAk",
+    image: "https://res.cloudinary.com/dxaf36ydh/image/upload/f_auto,q_auto/v1/Portfolio/Weather_App_and_4_more_pages_-_Personal_-_Microsoft_Edge_08-03-2025_00_53_26_tuvper",
     github: "https://github.com/saurabhbahadur/Weather-App",
+  },
+  {
+    id: 4,
+    name: "Tour India Tourism",
+    tech: "HTML CSS MySQL PHP Bootstrap 4 ",
+    image: "https://res.cloudinary.com/dxaf36ydh/image/upload/f_auto,q_auto/v1/Portfolio/f1jadxrafz23hkqprld9",
+    github: "https://github.com/saurabhbahadur",
+  },
+  {
+    id: 5,
+    name: "Blog App",
+    tech: "HTML CSS MySQL PHP Bootstrap 4 ",
+    image: "https://res.cloudinary.com/dxaf36ydh/image/upload/f_auto,q_auto/v1/Portfolio/xp1ah6bcb0jllhaibhv2",
+    github: "https://github.com/saurabhbahadur",
   },
 ];
 
@@ -84,7 +103,7 @@ export const certificates = [
     id: 1,
     title: "Java with DSA and System Design 2.0",
     issuedby: "PW Skills",
-    image: "https://media.licdn.com/dms/image/v2/D5622AQElkgcNmP7e2w/feedshare-shrink_1280/feedshare-shrink_1280/0/1713505331486?e=1744243200&v=beta&t=dzp7N4fJ4lBU-7Ut4NZ0R_rW7CqYcpWGZGpSkcaGuPo",
+    image: "https://res.cloudinary.com/dxaf36ydh/image/upload/f_auto,q_auto/v1/Portfolio/8ba548cc-e3c0-4000-954c-9d99b5232afc_qc1zog",
     tech: "Java , DSA (Array String)",
     year: "April 2024",
   },
@@ -92,7 +111,7 @@ export const certificates = [
     id: 2,
     title: "Full Stack Web Develpoment + Deployment",
     issuedby: "Apna College",
-    image: "https://media.licdn.com/dms/image/v2/D4D22AQHJiB0U_Nr_Ow/feedshare-shrink_2048_1536/feedshare-shrink_2048_1536/0/1706773240124?e=1744243200&v=beta&t=CMBD08WBz2yKhy3A-MPRUYnL-oIOHRN7h8cBcjWdhKw",
+    image: "https://res.cloudinary.com/dxaf36ydh/image/upload/f_auto,q_auto/v1/Portfolio/certificate-delta-batch-20-659e5afc7fa67ec97205fc76.pdf_-_WPS_Office_01-02-2024_13_05_37_orov9h",
     tech: "HTML CSS JS MongoDB ExpressJS NodeJS ReactJS Cloudinary Mapbox GitHub Render Deployment",
     year: "Jan 2024",
   },
@@ -116,7 +135,7 @@ export const certificates = [
     id: 5,
     title: "Web Application Using PHP",
     issuedby: "NovaEdge",
-    image: "https://media.licdn.com/dms/image/v2/D562DAQGKE_tMkb_ASQ/profile-treasury-image-shrink_1280_1280/profile-treasury-image-shrink_1280_1280/0/1713240928543?e=1741982400&v=beta&t=q501HXQzDsQeFxQMIa9mbZAIwnfGkz6eHeEtSx9rmdM",
+    image: "https://res.cloudinary.com/dxaf36ydh/image/upload/f_auto,q_auto/v1/Portfolio/IMG_5183_fedvxo",
     tech: "HTML CSS JS Bootstrap 4 PHP XAMPP MySql",
     year: "August 2019",
   },
@@ -222,6 +241,10 @@ export const skills = [
   {
     id: 25,
     name: "SEO Automation",
+  },
+  {
+    id: 26,
+    name: "Microservices Architecture",
   },
 
 ];

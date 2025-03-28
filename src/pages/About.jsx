@@ -1,5 +1,6 @@
 import React from "react";
-import { my_urls } from "../util/Data";
+
+const about_me_img = "https://res.cloudinary.com/dxaf36ydh/image/upload/f_auto,q_auto/v1/Portfolio/saur_about_me_mclg4m";
 
 const About = () => {
   return (
@@ -8,7 +9,7 @@ const About = () => {
         <h2 className="text-4xl font-bold text-center mb-12  ">About Me</h2>
         <div className="flex flex-col md:flex-row items-center md:space-x-12 ">
           <img
-            src="./saur_about_me.jpg"
+            src={about_me_img}
             alt=""
             className="w-72 h-80 rounded object-cover mb-8 md:mb-0"
           />
@@ -77,6 +78,7 @@ const About = () => {
           </div>
         </div>
         {/* exp */}
+
         {/* <div className="mt-12 flex justify-between text-center ">
           <div>
             <h3 className="text-2xl font-bold text-transparent bg-clip-text bg-secondary_button_grad">
@@ -97,6 +99,7 @@ const About = () => {
             <p>Happy Clients</p>
           </div>
         </div> */}
+        
       </div>
     </div>
   );
