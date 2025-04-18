@@ -43,10 +43,10 @@ const Certificates = () => {
               className="rounded-lg mb-4 w-full h-48 object-cover"
               loading="lazy"
             />
-            <h3 className="text-2xl font-bold mb-2">{certificates[currentIndex].title}</h3>
-            <p className="text-primary_text mb-1 font-bold">{certificates[currentIndex].issuedby}</p>
-            <p className="text-primary_text mb-1">{certificates[currentIndex].tech}</p>
-            <p className="text-primary_text font-bold mb-1">{certificates[currentIndex].year}</p>
+            <h3 className="text-xl font-bold mb-1">{certificates[currentIndex].title}</h3>
+            <p className="text-primary_text p-1 italic">{certificates[currentIndex].issuedby}</p>
+            <p className="text-primary_text p-1 hover:underline"> {certificates[currentIndex].tech} </p>
+            <p className="text-gray-600 italic hover:text-primary_text mb-1">{certificates[currentIndex].year}</p>
           </div>
 
           {/* Right Card */}

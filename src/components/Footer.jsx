@@ -28,7 +28,7 @@ const Footer = () => {
               href={my_urls[0].linked_id}
               className="text-secondary_text hover:text-primary_text"
             >
-              <FaLinkedinIn className="text-2xl" />
+              <FaLinkedinIn className="text-xl" />
             </a>
             <a
               href={my_urls[0].discord_id}
@@ -55,7 +55,7 @@ const Footer = () => {
               <FaInstagram className="text-2xl" />
             </a>
           </div>
-          <div className="flex space-x-4">
+          <div className="flex space-x-2">
             <a href="" className="text-secondary_text hover:text-primary_text">
               Privacy
             </a>

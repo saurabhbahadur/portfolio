@@ -71,7 +71,7 @@ export const projects = [
     name: "mmaxdentalcare.com",
     tech : "React Vite Tailwind CSS Firebase Cloudinary JS Firestore Router  ",
     image: "https://res.cloudinary.com/dxaf36ydh/image/upload/f_auto,q_auto/v1/Portfolio/c5d5inymxkazofyhifyk",
-    github: "https://github.com/saurabhbahadur/dental_frontend",
+    github: "https://github.com/saurabhbahadur",
   },
   {
     id: 3,

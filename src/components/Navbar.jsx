@@ -1,11 +1,19 @@
 import React, { useState } from "react";
-import { FaTimes } from "react-icons/fa";
-import { FaBars } from "react-icons/fa6";
-import { Link } from "react-router-dom";
+import { FaTimes, FaBars } from "react-icons/fa";
+import { Link } from "react-router-dom"; // Only useful if you're navigating routes, not anchor links
 
+const menuItems = [
+  { label: "Home", href: "#home" },
+  { label: "Services", href: "#services" },
+  { label: "Projects", href: "#projects" },
+  { label: "About", href: "#aboutme" },
+  { label: "Contact", href: "#contact" },
+];
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+
+  const handleMenuClick = () => setIsOpen(false);
 
   return (
     <nav className="bg-primary_bg text-primary_text px-6 md:px-16 lg:px-24 fixed top-0 w-full z-50 shadow-md">
@@ -15,21 +23,15 @@ const Navbar = () => {
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex space-x-6">
-          <a href="#home" className="hover:text-hover_color">
-            Home
-          </a>
-          <a href="#services" className="hover:text-hover_color">
-            Services
-          </a>
-          <a href="#projects" className="hover:text-hover_color">
-            Projects
-          </a>
-          <a href="#about" className="hover:text-hover_color">
-            About
-          </a>
-          <a href="#contact" className="hover:text-hover_color">
-            Contact
-          </a>
+          {menuItems.map((item, index) => (
+            <a
+              key={index}
+              href={item.href}
+              className="hover:text-hover_color transition duration-300"
+            >
+              {item.label}
+            </a>
+          ))}
         </div>
 
         {/* Mobile Menu Button */}
@@ -41,36 +43,16 @@ const Navbar = () => {
       {/* Mobile Menu */}
       {isOpen && (
         <div className="md:hidden bg-primary_bg py-4 absolute top-full text-center left-0 w-full shadow-lg">
-          <a href="#home"
-            className="block py-2 px-6 hover:text-hover_color"
-            onClick={() => setIsOpen(false)}
-          >
-            Home
-          </a>
-           <a href="#services"
-            className="block py-2 px-6 hover:text-hover_color"
-            onClick={() => setIsOpen(false)}
-          >
-            Services
-          </a>
-          <a href="#projects"
-            className="block py-2 px-6 hover:text-hover_color"
-            onClick={() => setIsOpen(false)}
-          >
-            Projects
-          </a>
-           <a href="#about"
-            className="block py-2 px-6 hover:text-hover_color"
-            onClick={() => setIsOpen(false)}
-          >
-            About
-          </a>
-          <a href="#contact"
-            className="block py-2 px-6 hover:text-hover_color"
-            onClick={() => setIsOpen(false)}
-          >
-            Contact
-          </a>
+          {menuItems.map((item, index) => (
+            <a
+              key={index}
+              href={item.href}
+              onClick={handleMenuClick}
+              className="block py-2 px-6 hover:text-hover_color transition duration-300"
+            >
+              {item.label}
+            </a>
+          ))}
         </div>
       )}
       <hr />
